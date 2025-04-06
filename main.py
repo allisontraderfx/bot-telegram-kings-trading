@@ -14,7 +14,7 @@ def send_welcome(message):
     markup.add(suporte_button, instagram_button)
 
     with open('logo.png', 'rb') as photo:
-        bot.send_photo(message.chat.id, photo, caption="🚀 Bem-vindo ao canal oficial da King's Trading!\n\nFique atento às nossas atualizações e oportunidades exclusivas!',
+        bot.send_photo(message.chat.id, photo, caption="""🚀 Bem-vindo ao canal oficial da King's Trading!\n\nFique atento às nossas atualizações e oportunidades exclusivas!""",
                        reply_markup=markup)
 
 # Iniciar o bot
